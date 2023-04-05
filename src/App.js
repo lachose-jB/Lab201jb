@@ -4,6 +4,7 @@ import ArtisteInfo from './components/artisteInfo/ArtisteInfo';
 import Actualité from './components/Actualité';
 import Album from './components/Album';
 import Date from './components/Date';
+import PopIn from './components/pop-in';
 
 function App() {
   return (

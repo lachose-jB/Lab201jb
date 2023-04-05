@@ -1,7 +1,4 @@
-* {
-    margin: 0;
-    box-sizing: border-box;
-}
+
 
 nav figure {
     width: 20%;
@@ -96,10 +93,8 @@ nav {
   
 .header article h1 {
     width: 100%;
-    position: relative;
-    left: 12vw;
     margin: 5% 5% 0% 7%;
-    font-size: 15rem;
+    font-size: 10rem;
     color: #fff;
   } 
   

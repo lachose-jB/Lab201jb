@@ -79,16 +79,86 @@
 }
 
 .ticket-or img{
-    width: 70%;
+    width: 100%;
 }
 
 .blob{
-    width: 100%;
+    width: 108%;
     position: absolute;
     z-index: -1;
-    top: 34%;
+    top: 31%;
     left: 10%;
     transform: rotate(65deg);
 }
 
+@media  all and (max-width: 1100px){
+    .blob{
+        width: 140%;
+        position: absolute;
+        z-index: -1;
+        top: 25%;
+        left: 0%;
+        transform: rotate(65deg);
+    }
+}
 
+@media all and (max-width: 750px) {
+    .Album ul{
+        align-items: center;
+    }   
+
+    .blob{
+        width: 180%;
+        position: absolute;
+        z-index: -1;
+        top: 18%;
+        left: -8%;
+        transform: rotate(65deg);
+    }
+}
+
+@media all and (max-width: 550px) {
+    .Album ul{
+        align-items: center;
+    } 
+
+    .Album ul li{
+        font-size: 25px;
+    }
+    
+    .Album p{
+        font-size: 25px;
+    }
+
+    .blob{
+        width: 220%;
+        position: absolute;
+        z-index: -1;
+        top: 11%;
+        left: -22%;
+        transform: rotate(65deg);
+    }
+}
+
+@media all and (max-width: 450px) {
+    .Album ul{
+        align-items: center;
+    } 
+
+    .Album ul li{
+        font-size: 20px;
+    }
+    
+    .Album p{
+        font-size: 20px;
+    }
+
+    .blob{
+        width: 250%;
+        position: absolute;
+        z-index: -1;
+        top: 11%;
+        left: -22%;
+        transform: rotate(65deg);
+    }
+}

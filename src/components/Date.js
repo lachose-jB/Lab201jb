@@ -9,15 +9,15 @@ const Date = () => {
     const [datesTab, setDatesTab] = useState([]);
  
     useEffect( () => {
-    databaseService.readData("dates", (data) => {
-      let tab = [];
-      for(const key in data){
-        const newdate = {...data[key], id: key}
-        tab.push(newdate)
-      }
-      setDatesTab(tab)
-    })
-  },[])
+        databaseService.readData("dates", (data) => {
+        let tab = [];
+        for(const key in data){
+            const newdate = {...data[key], id: key}
+            tab.push(newdate)
+        }
+        setDatesTab(tab)
+        })
+    },[])
 
     let date1 = "";
 
@@ -94,7 +94,7 @@ const Date = () => {
                                 <p>{date.ville}</p>
                             </article>
 
-                            <span>Sold out !</span>
+                            <span>Sold out </span>
                         </div>
                         
                         <button>reserver</button>
