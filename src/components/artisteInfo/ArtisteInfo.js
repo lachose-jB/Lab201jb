@@ -5,10 +5,26 @@ import photo2 from '../assets/img2.png';
 import photo3 from '../assets/img3.png';
 
 const ArtisteInfo = () => {
+    function reveal() {
+        let reveals = document.querySelectorAll(".reveal");
+        for (let i = 0; i < reveals.length; i++) {
+          let windowHeight = window.innerHeight;
+          let elementTop = reveals[i].getBoundingClientRect().top;
+          let elementVisible = 150;
+      
+          if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+          } else {
+            reveals[i].classList.remove("active");
+          }
+        }
+      }
+      
+      window.addEventListener("scroll", reveal);
     return (
         <main className="Main">
-            <section className="sect1">
-                <article>
+            <section className="sect1 reveal">
+                <article className="sect1 reveal fade-left" >
                     <h2>
                         Qui est Pink?
                     </h2>
@@ -23,8 +39,8 @@ const ArtisteInfo = () => {
                     <img src={photo1} alt="I1"/>
                 </figure>
             </section>
-            <section className="sect2">
-                <figure>
+            <section className="sect2 reveal ">
+                <figure className="sect2 reveal fade-right ">
                     <img src={photo3} alt="I2"/>
                 </figure>
                 <article>
@@ -39,7 +55,7 @@ const ArtisteInfo = () => {
                     </p>
                 </article>
             </section>
-            <section className="sect3">
+            <section className="sect3 reveal fade-left">
                 <article>
                     <h2>Palmarés</h2>
                     <p>
