@@ -8,6 +8,7 @@
     justify-content: center;
     z-index: 1;
     overflow: hidden;
+    width: 100%;
 }
 
 .Album figure{
@@ -19,10 +20,11 @@
     width: 100%;
 }
 
-.Album .cover{
+.cover{
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 
 .Album .cover img{
@@ -46,7 +48,7 @@
     font-size: 30px;
 }
 
-.Album  .logo{
+.logo{
     margin-left: 5px;
     cursor: pointer;
     font-size: 25px;
@@ -81,7 +83,7 @@
 }
 
 .blob{
-    width: 90%;
+    width: 100%;
     position: absolute;
     z-index: -1;
     top: 34%;

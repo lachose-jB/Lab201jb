@@ -1,8 +1,8 @@
 import "./Actualité.css";
-import Pink from "../assets/pink trou.png";
-import Scene from '../assets/pink iheart radio.jpg';
-import Covid from '../assets/pinkcovid.jpg';
-import Holywood from '../assets/pinkPP.jpg'
+import Pink from "./assets/pink trou.png";
+import Scene from './assets/pink iheart radio.jpg';
+import Covid from './assets/pinkcovid.jpg';
+import Holywood from './assets/pinkPP.jpg'
 import { FaInstagram, FaTwitter, FaFacebookSquare } from "react-icons/fa";
 import { React } from "react";
 import Carousel from "./Carousel.js";

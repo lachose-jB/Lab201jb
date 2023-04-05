@@ -65,7 +65,7 @@
     justify-content: center;
     position: absolute;
     top: 50%;
-    background-image: url(../assets/blob\ button.svg);
+    background-image: url(./assets/blob\ button.svg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100px;
@@ -84,7 +84,7 @@
     justify-content: center;
     position: absolute;
     top: 50%;
-    background-image: url(../assets/blob\ button.svg);
+    background-image: url(./assets/blob\ button.svg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100px;
