@@ -1,0 +1,84 @@
+.date-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+}
+
+.date{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+}
+
+.date h2{
+    font-size: 35px;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.date-item{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    border: solid 5px white;
+    justify-content: flex-start;
+    padding: 10px 10px 10px 0;
+    border-radius: 200px;
+    border-top-right-radius: 0px;
+    margin-bottom: 1rem;
+    gap: 90px;
+}
+
+.date-item article{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-flow: column nowrap;
+}
+
+.date-item article h3{
+    font-size: 35px;
+    font-weight: lighter;
+}
+
+.date-item article p{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.date-container button{
+    padding: 15px;
+    font-size: 20px;
+    color: white;
+    background-color: #FFA8D9;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.date-item span{
+    color: #FFA8D9;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.circle{
+    text-align: center;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 5px solid white;
+    border-left: none;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}

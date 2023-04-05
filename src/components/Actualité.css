@@ -1,0 +1,153 @@
+.Actualité{
+    padding: 1rem;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Pink_record{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.Pink_record figure{
+    padding: 1rem;
+    width: 40%;
+}
+
+.Pink_record figure img{
+    width: 100%;
+} 
+
+.Pink_record article{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 20px;
+    width: 50%;
+}
+
+.Pink_record article p{
+    font-size: 28px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.Pink_record article button{
+    background-color: #FFA8D9;
+    width: fit-content;
+    border: none;
+    padding: 15px 12px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #ffff;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease-in;
+}
+
+.Pink_record article button:hover{
+    transform: scale(1.1);
+}
+
+.social{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 28px;
+}
+
+.social h3{
+    font-size: 38px;
+}
+
+.social article{
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+    gap: 35px;
+}
+
+.insta, .twitter, .fb{
+    font-size: 60px;
+    color: #FFA8D9;
+    cursor: pointer;
+}
+
+.insta{
+    transform: rotate(-35deg);
+}
+
+.twitter{
+    transform: rotate(45deg);
+}
+
+.fb{
+    transform: rotate(65deg);
+}
+.insta:hover, .twitter:hover, .fb:hover{
+    transform: rotate(0);
+    transition: 0.5s;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.Slider-content{
+    width: 800px;
+    display: inline-flex;
+    overflow: hidden;
+}
+
+.Slider-container{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+}
+
+.prev,.next{
+    font-size: 70px;
+    cursor: pointer;
+}
+
+  
+@media screen and (max-width:900px) {
+    .social article{
+        display: flex;
+        align-items: center;
+        width: 100vw;
+        justify-content: center;
+        flex-flow: row nowrap;
+        gap: 35px;
+    }
+    
+    .insta, .twitter, .fb{
+        font-size: 60px;
+        color: #FFA8D9;
+        cursor: pointer;
+    }
+    
+    .insta{
+        transform: rotate(-35deg);
+    }
+    
+    .twitter{
+        transform: rotate(45deg);
+    }
+    
+    .fb{
+        transform: rotate(65deg);
+    }
+
+    .insta:hover, .twitter:hover, .fb:hover{
+        transform: rotate(0);
+        transition: 0.5s;
+        color: #ffffff;
+        cursor: pointer;
+    }
+  }
