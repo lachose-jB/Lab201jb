@@ -1,0 +1,155 @@
+.Pop-in{
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 120vh;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(3px);
+    color: black;
+}
+
+.hidden{
+    display: none;
+}
+
+.Pop-in-item{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FFF;
+    border: solid 10px #9D802D;
+    width: 70%;
+    padding: 20px;
+    position: relative;
+}
+
+.Pop-in-item h1{
+    font-size: 70px;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.Pop-in figure{
+    width: 50%;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.Pop-in-item h2{
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.Pop-in-item p{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.Pop-in-item input{
+    border: solid 5px black;
+    padding: 12px 10px;
+    width: 90%;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.Pop-in-item button{
+    border: none;
+    font-size: 30px;
+    padding: 12px 10px;
+    cursor: pointer;
+    width: 40%;
+    background-color: #9D802D;
+    color: #FFF;
+    border-radius: 5px;
+    box-shadow: #9d7f2c 0px 2px 7px;
+    transition: all 0.3s;
+}
+
+.Pop-in-item button:hover{
+    background-color: #FFF;
+    color: #9D802D;
+    box-shadow: #9d7f2c 0px 2px 10px;
+}
+
+.Pop-in-item input::placeholder{
+    font-size: 25px;
+    text-align: center;
+}
+
+.close{
+    font-size: 40px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+
+@media all and (max-width: 760px){
+    .Pop-in h1{
+        font-size: 50px !important;
+    }
+
+    .Pop-in h2{
+        font-size: 40px !important;
+    }
+
+    .Pop-in p{
+        font-size: 20px !important;
+    }
+
+    .Pop-in figure{
+        width: 80% !important;
+    }
+
+}
+
+@media all and (max-width: 570px){
+    .Pop-in h1{
+        font-size: 40px !important;
+    }
+
+    .Pop-in h2{
+        font-size: 30px !important;
+    }
+
+    .Pop-in p{
+        font-size: 18px !important;
+    }
+
+    .Pop-in figure{
+        width: 80% !important;
+    }
+
+    .Pop-in button{
+        font-size: 20px;
+    }
+}
+
+@media all and (max-width: 430px){
+    .Pop-in h1{
+        font-size: 30px !important;
+    }
+
+    .Pop-in h2{
+        font-size: 25px !important;
+    }
+
+    .Pop-in p{
+        font-size: 18px !important;
+    }
+
+    .Pop-in figure{
+        width: 80% !important;
+    }
+}

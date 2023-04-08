@@ -1,0 +1,32 @@
+*{
+  scroll-behavior: smooth;
+}
+
+
+.Home {
+  background-image: linear-gradient(0deg,#107ed8,#239bf0,#5eaff1);
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  background-size: 600% 100%;
+}
+.UpCase {
+  text-transform: uppercase;
+}
+
+@keyframes bg-pan-left {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.bg-pan-left {
+	        animation: bg-pan-left 8s infinite both;
+}
